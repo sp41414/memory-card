@@ -7,6 +7,7 @@ export default async function fetchPokemon(offset) {
 
     const dataWithImages = data.results.map((element) => {
       console.log(element.url);
+      // i have no idea how regexes work im praying this works
       const id = Number(element.url.match(/\/pokemon\/(\d+)\//)[1]);
       console.log(id);
       return {

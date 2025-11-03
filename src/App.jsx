@@ -51,8 +51,10 @@ function App() {
 
   return (
     <>
-      <div className="score">Score: {score}</div>
-      <div className="best-score">Best Score: {bestScore}</div>
+      <div className="score-container">
+        <div className="score">Score: {score}</div>
+        <div className="best-score">Best Score: {bestScore}</div>
+      </div>
       <PokemonCards response={response} handleClick={handleClick} />
     </>
   );
